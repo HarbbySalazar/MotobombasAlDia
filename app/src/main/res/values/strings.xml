@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MotobombasAlDia</string>
+    <string name="txtPassword">Password</string>
 </resources>
