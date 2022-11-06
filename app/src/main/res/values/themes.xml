@@ -13,4 +13,20 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="titulos">
+        <item name="android:textColor">@color/azul</item>
+        <item name="android:fontFamily">@font/roboto_black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="txtLogin">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">Arial</item>
+        <item name="android:background">@color/naranja_claro</item>
+    </style>
+    <style name="botones">
+        <item name="android:background">@color/gris</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 </resources>

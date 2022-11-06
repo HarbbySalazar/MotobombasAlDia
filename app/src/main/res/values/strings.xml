@@ -1,4 +1,15 @@
 <resources>
-    <string name="app_name">MotobombasAlDia</string>
+    <string name="app_name">Motobombas Al Dia</string>
     <string name="txtPassword">Password</string>
+    <string name="txtUsuario">Usuario</string>
+    <string-array name="tiposIdentificacion">
+        <item>Cédula de Ciudadania</item>
+        <item>Pasaporte</item>
+        <item>Cedula de Extranjeria</item>
+    </string-array>
+    <string name="txtIdentificacion">Identificación</string>
+    <string name="txtNombre">Nombres</string>
+    <string name="txtApellidos">Apellidos</string>
+    <string name="txtDir">Direccion</string>
+    <string name="txtTelefon">Teléfono</string>
 </resources>
