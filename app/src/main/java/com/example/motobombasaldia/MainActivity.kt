@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             val contrasena:String = binding.txtPassword.text.toString()
             println(usuario)
             if ((usuario == "hysalazar") && (contrasena == "123456")){
-                startActivity(Intent(this,ActClientes::class.java))
+                startActivity(Intent(this,principal::class.java))
                 Toast.makeText(this, "Ingreso Exitoso", Toast.LENGTH_LONG).show()
             }
             else
@@ -30,6 +30,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnRegistrarse.setOnClickListener {
             startActivity(Intent(this,ActClientes::class.java))
+        }
+
+        binding.lblOlvido.setOnClickListener {
+            startActivity((Intent(this,olvidoPassword::class.java)))
         }
     }
 }

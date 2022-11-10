@@ -13,14 +13,15 @@
         style="@android:style/Widget.Material.Light.Button.Borderless"
         android:layout_width="134dp"
         android:layout_height="35dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="36dp"
         android:background="@color/gris"
         android:backgroundTint="@color/gris"
         android:text="Registrarse"
         app:icon="@android:drawable/checkbox_on_background"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toEndOf="@+id/btnIngresar"
-        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/lblOlvido" />
 
     <EditText
         android:id="@+id/txtPassword"
@@ -62,14 +63,14 @@
         style="@android:style/Widget.Material.Light.Button.Borderless"
         android:layout_width="134dp"
         android:layout_height="35dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
         android:background="@color/gris"
         android:backgroundTint="@color/gris"
         android:text="Ingresar"
         app:icon="@android:drawable/checkbox_on_background"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/lblOlvido" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -93,5 +94,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/lblOlvido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Olvido su contraseña?"
+        android:textColor="#01525C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

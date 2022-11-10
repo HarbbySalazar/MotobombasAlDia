@@ -4,6 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
     tools:context=".splash">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animacionmad"
+        android:layout_width="263dp"
+        android:layout_height="223dp"
+        android:background="@drawable/fondo"
+        android:backgroundTint="@color/azul_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animacion" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="217dp"
+        android:layout_height="274dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

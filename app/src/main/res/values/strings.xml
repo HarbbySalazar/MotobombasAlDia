@@ -11,5 +11,6 @@
     <string name="txtNombre">Nombres</string>
     <string name="txtApellidos">Apellidos</string>
     <string name="txtDir">Direccion</string>
-    <string name="txtTelefon">Teléfono</string>
+    <string name="txtTelefono">Teléfono</string>
+    <string name="txtEmail">Correo Electrónico</string>
 </resources>
