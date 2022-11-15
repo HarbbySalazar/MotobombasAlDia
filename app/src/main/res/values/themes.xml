@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.MotobombasAlDia" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/gris</item>
+        <item name="colorPrimaryVariant">@color/gris</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -20,8 +20,8 @@
     </style>
     <style name="txtLogin">
         <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">24dp</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">normal</item>
         <item name="fontFamily">Arial</item>
         <item name="android:background">@color/naranja_claro</item>
     </style>

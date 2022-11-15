@@ -16,7 +16,10 @@ class olvidoPassword : AppCompatActivity() {
         binding.btnEnviar.setOnClickListener {
             val email = binding.txtEmail.text.toString()
             if (email !="")
-                Toast.makeText(this, "Envio de contraseña exitoso", Toast.LENGTH_LONG).show()
+                if((email=="harbysalazar@gmail.com") || (email=="davalbe@gmail.com") || (email=="gutavo.moralesp@gmail.com"))
+                    Toast.makeText(this, "Envio de contraseña exitoso", Toast.LENGTH_LONG).show()
+                else
+                    Toast.makeText(this, "Correo electrónico no registrado", Toast.LENGTH_LONG).show()
             else
                 Toast.makeText(this, "Diligencie un correo electrónico", Toast.LENGTH_LONG).show()
         }

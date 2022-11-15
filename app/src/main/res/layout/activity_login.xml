@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Login">
 
     <Button
         android:id="@+id/btnRegistrarse"
@@ -14,9 +14,10 @@
         android:layout_width="134dp"
         android:layout_height="35dp"
         android:layout_marginTop="36dp"
-        android:background="@color/gris"
+        android:background="@drawable/diseno_boton"
         android:backgroundTint="@color/gris"
         android:text="Registrarse"
+        android:textColor="@color/blanco"
         app:icon="@android:drawable/checkbox_on_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.485"
@@ -30,6 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
+        android:background="@drawable/diseno_boton"
         android:ems="10"
         android:hint="@string/txtPassword"
         android:inputType="textPassword"
@@ -46,7 +48,8 @@
         style="@style/txtLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/diseno_boton"
         android:ems="10"
         android:hint="@string/txtUsuario"
         android:inputType="textPersonName"
@@ -65,9 +68,10 @@
         android:layout_height="35dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="36dp"
-        android:background="@color/gris"
+        android:background="@drawable/diseno_boton"
         android:backgroundTint="@color/gris"
         android:text="Ingresar"
+        android:textColor="#FFFFFF"
         app:icon="@android:drawable/checkbox_on_background"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblOlvido" />

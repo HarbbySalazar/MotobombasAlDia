@@ -13,4 +13,6 @@
     <string name="txtDir">Direccion</string>
     <string name="txtTelefono">Teléfono</string>
     <string name="txtEmail">Correo Electrónico</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="btnMapa">Mapa</string>
 </resources>

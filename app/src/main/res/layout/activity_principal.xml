@@ -5,14 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    tools:context=".principal">
+    tools:context=".Principal">
+
+    <Button
+        android:id="@+id/btnListTecnicos"
+        android:layout_width="157dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/diseno_boton"
+        android:text="Listado Tecnicos"
+        android:textColor="@color/blanco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toEndOf="@+id/btnLisClientes"
+        app:layout_constraintTop_toBottomOf="@+id/btnSomos" />
+
+    <Button
+        android:id="@+id/btnLisClientes"
+        android:layout_width="157dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/diseno_boton"
+        android:text="Listado Clientes"
+        android:textColor="@color/blanco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEmpresas" />
 
     <Button
         android:id="@+id/btnSolicitar"
         android:layout_width="319dp"
         android:layout_height="90dp"
         android:layout_marginTop="12dp"
+        android:background="@drawable/diseno_boton"
         android:text="Servicios"
+        android:textColor="@color/blanco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
@@ -25,6 +53,7 @@
         android:text="MOTOBOMBAS AL DIA"
         android:textColor="#000000"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,38 +63,45 @@
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/diseno_boton"
         android:text="Somos"
+        android:textColor="@color/blanco"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.813"
         app:layout_constraintStart_toEndOf="@+id/btnEmpresas"
         app:layout_constraintTop_toBottomOf="@+id/btnTecnico" />
 
     <Button
         android:id="@+id/btnTecnico"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/diseno_boton"
         android:text="nuevo tecnico"
+        android:textColor="@color/blanco"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
         app:layout_constraintStart_toEndOf="@+id/btnCliente"
         app:layout_constraintTop_toBottomOf="@+id/btnSolicitar" />
 
     <Button
         android:id="@+id/btnEmpresas"
-        android:layout_width="152dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="32dp"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
+        android:background="@drawable/diseno_boton"
         android:text="Empresas"
+        android:textColor="@color/blanco"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCliente" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="102dp"
-        android:layout_height="107dp"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -75,11 +111,13 @@
 
     <Button
         android:id="@+id/btnCliente"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="36dp"
+        android:background="@drawable/diseno_boton"
         android:text="Nuevo Cliente"
+        android:textColor="@color/blanco"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSolicitar" />
 

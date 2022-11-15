@@ -14,4 +14,6 @@
     <color name="gris">#525558</color>
     <color name="negro">#FF000000</color>
     <color name="blanco">#FFFFFFFF</color>
+    <color name="rojo_claro">#F85353</color>
+    <color name="rojo_oscuro">#FF0000</color>
 </resources>
