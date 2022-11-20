@@ -45,7 +45,8 @@
             style="@style/txtLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/diseno_boton" />
+            android:background="@drawable/diseno_boton"
+            android:inputType="number" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -116,7 +117,8 @@
             style="@style/txtLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/diseno_boton" />
+            android:background="@drawable/diseno_boton"
+            android:inputType="phone" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout6"
@@ -133,7 +135,8 @@
             style="@style/txtLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/diseno_boton" />
+            android:background="@drawable/diseno_boton"
+            android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
