@@ -14,18 +14,25 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.FileProvider
+import androidx.room.Room
 import com.airbnb.lottie.animation.content.Content
+import com.example.motobombasaldia.data.UsuarioDB
 import com.example.motobombasaldia.databinding.ActivityRegTecnicosBinding
+import com.example.motobombasaldia.model.TecnicoModel
+import com.example.motobombasaldia.model.UsuarioModel
 import java.io.File
 import java.io.OutputStream
 
 
 class Reg_Tecnicos : AppCompatActivity() {
     private lateinit var binding: ActivityRegTecnicosBinding
+    private lateinit var database: UsuarioDB
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegTecnicosBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        database= Room.databaseBuilder(
+            application,UsuarioDB::class.java, UsuarioDB.DATABASE_NAME).allowMainThreadQueries().build()
         binding.btnTomarFoto.setOnClickListener {
             val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE).also {
                 it.resolveActivity(packageManager).also { component->
@@ -39,8 +46,10 @@ class Reg_Tecnicos : AppCompatActivity() {
         }
 
         binding.btnGabar.setOnClickListener{
-            if ((binding.txtIdentificacion.text.toString()!="") ||(binding.txtApellidos.text.toString()!="") || (binding.txtEmail.text.toString()!="") || (binding.txtTel.text.toString()!=""))
+            if ((binding.txtIdentificacion.text.toString()!="") ||(binding.txtApellidos.text.toString()!="") || (binding.txtEmail.text.toString()!="") || (binding.txtTel.text.toString()!="")) {
+                guardarTecnico()
                 Toast.makeText(this, "Datos del técnico guardados", Toast.LENGTH_LONG).show()
+            }
             else
                 Toast.makeText(this, "Faltan datos por digitar", Toast.LENGTH_LONG).show()
         }
@@ -63,5 +72,16 @@ class Reg_Tecnicos : AppCompatActivity() {
         file = File.createTempFile("IMG_${System.currentTimeMillis()}_", ".jpg", dir)
     }
 
+    private fun guardarTecnico() {
+        val identificacion=binding.txtIdentificacion.text.toString()
+        val nombres=binding.txtNombres.text.toString()
+        val apellidos=binding.txtApellidos.text.toString()
+        val direccion= binding.txtDir.text.toString()
+        val telefono=binding.txtTel.text.toString()
+        val correo=binding.txtEmail.text.toString()
+        val foto=file
+        val tecnico = TecnicoModel(identificacion, nombres, apellidos, direccion,telefono,correo, foto.toString())
+        database.tecnicoDAO.insertar(tecnico)
+    }
 
 }
